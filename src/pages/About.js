@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
-import Button from '../components/Button';
 import AboutImg from '../assets/images/about-page-img.png';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
@@ -75,6 +74,21 @@ const AboutPageStyles = styled.div`
       font-size: 3rem;
     }
   }
+  .button {
+    font-size: 2.2rem;
+    background-color: ${(props) =>
+      props.outline ? 'transperant' : 'var(--gray-1)'};
+    padding: 0.7em 2em;
+    border: 2px solid var(--gray-1);
+    border-radius: 8px;
+    display: inline-block;
+    color: ${(props) => (props.outline ? 'var(--gary-1)' : 'black')};
+  }
+  @media only screen and (max-width: 768px) {
+    .button {
+      font-size: 1.8rem;
+    }
+  }
 `;
 
 export default function About() {
@@ -113,11 +127,13 @@ export default function About() {
                   place.
                 </PText>
               </div>
-              <Button
-                btnText="Download CV"
+              <a
                 href="./assets/data/18IT08_Guruprasath_Resume.pdf"
-                download
-              />
+                download="Guruprasath_Resume.pdf"
+                className="button"
+              >
+                Download cv
+              </a>
             </div>
             <div className="right">
               <img src={AboutImg} alt="me" />
