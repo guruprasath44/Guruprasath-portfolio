@@ -4,6 +4,7 @@ import PText from '../components/PText';
 import AboutImg from '../assets/images/about-page-img.png';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
+import PDF from '../assets/data/18IT08_Guruprasath_Resume.pdf';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -127,12 +128,8 @@ export default function About() {
                   place.
                 </PText>
               </div>
-              <a
-                href="./assets/data/18IT08_Guruprasath_Resume.pdf"
-                download="Guruprasath_Resume.pdf"
-                className="button"
-              >
-                Download cv
+              <a className="button " href={PDF} download="guru.pdf">
+                Download Resume
               </a>
             </div>
             <div className="right">
