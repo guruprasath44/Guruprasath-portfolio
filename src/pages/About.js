@@ -116,7 +116,7 @@ export default function About() {
               <Button
                 btnText="Download CV"
                 href="./assets/data/18IT08_Guruprasath_Resume.pdf"
-                download="Guruprasath_Resume"
+                download
               />
             </div>
             <div className="right">
