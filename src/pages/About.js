@@ -128,7 +128,11 @@ export default function About() {
                   place.
                 </PText>
               </div>
-              <a className="button " href={PDF} download="guru.pdf">
+              <a
+                className="button "
+                href={PDF}
+                download="Guruprasath_Resume.pdf"
+              >
                 Download Resume
               </a>
             </div>
