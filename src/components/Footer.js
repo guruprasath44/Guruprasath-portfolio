@@ -58,11 +58,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer__col1">
           <h1 className="footer__col1__title">Guruprasath</h1>
-          <PText>
-            A freelance web designer and developer from Chittagong, Bangladesh.
-            I always make websites that have unique designs and also has a good
-            performance rate.
-          </PText>
+          <PText>Information Technology</PText>
         </div>
         <div className="footer__col2">
           <FooterCol
