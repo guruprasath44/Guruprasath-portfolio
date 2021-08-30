@@ -80,12 +80,12 @@ export default function AboutSection() {
             heading="About Me"
           />
           <PText>
-            I'm from Tiruppur, Tamil nadu. Currently, I am pursuing a Bachelor
-            of Technology at Sri Shakthi institute of engineering and
+            I'm from Tiruppur, Tamil nadu. Currently, I am pursuing my Bachelor
+            of Technology at Sri Shakthi Institute of Engineering and
             technology, Coimbatore
           </PText>
           <div className="aboutSection__buttons">
-            <Button btnText="Works" btnLink="/projects" />
+            <Button btnText="Projects" btnLink="/projects" />
             <Button btnText="Read More" btnLink="/about" outline />
           </div>
         </div>

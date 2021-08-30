@@ -105,10 +105,10 @@ export default function About() {
               <p className="about__subheading">
                 Hi, I am <span>Guruprasath</span>
               </p>
-              <h2 className="about__heading">B.Tech Information Technology</h2>
-              <h2 className="about__heading">
-                Sri Shakthi Institue of engineering and Technology, Coimbatore
-              </h2>
+              <p className="about__subheading">B.Tech Information Technology</p>
+              <p className="about__subheading">
+                Sri Shakthi Institute of Engineering and Technology, Coimbatore.
+              </p>
               <div className="about__info">
                 <PText>
                   I am from Tiruppur,Tamilnadu. A place of beauty and nature.
@@ -152,7 +152,7 @@ export default function About() {
               />
               <AboutInfoItem
                 title="College"
-                items={['Sri Shakthi Institue of Engineering and Technology']}
+                items={['Sri Shakthi Institute of Engineering and Technology']}
               />
               <AboutInfoItem
                 title="University"
