@@ -9,32 +9,31 @@ const projects = [
   {
     id: uuidv4(),
     name: 'E Learning Website',
-    desc:
-      'E learning website to learn programming languageslike Java, Mysql , C',
+    desc: 'E learning website to learn programming languages.',
     img: ElearningImg,
   },
   {
     id: uuidv4(),
     name: 'Student Marksheet',
-    desc: 'Website to view marksheet for students',
+    desc: 'Website to view marksheet for students.',
     img: MarksheetImg,
   },
   {
     id: uuidv4(),
     name: 'Attendance Management System',
-    desc: 'Attendance management system for a class',
+    desc: 'Attendance management system for a class.',
     img: AttendanceImg,
   },
   {
     id: uuidv4(),
     name: 'Portfolio',
-    desc: 'A portfolio profile of mine',
+    desc: 'A portfolio website of mine',
     img: CavinImg,
   },
   {
     id: uuidv4(),
     name: 'Class Management System',
-    desc: 'A website for class management for students and faculty',
+    desc: 'A website for class management for students and faculty.',
     img: ClassImg,
   },
 ];
