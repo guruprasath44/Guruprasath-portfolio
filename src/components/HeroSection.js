@@ -8,7 +8,7 @@ import PText from './PText';
 const HeroStyles = styled.div`
   .hero {
     height: 100vh;
-    min-height: 600px;
+    min-height: 770px;
     width: 100%;
     text-align: center;
     display: flex;
@@ -18,7 +18,7 @@ const HeroStyles = styled.div`
   }
   .hero__heading {
     font-size: 2rem;
-    margin-bottom: -2rem;
+    margin-bottom: -4rem;
     position: relative;
     span {
       display: inline-block;
@@ -87,7 +87,6 @@ const HeroStyles = styled.div`
         a {
           display: inline-block;
           font-size: 1.6rem;
-          transform: rotate(-90deg);
           letter-spacing: 5px;
           margin-bottom: 2rem;
         }
@@ -174,6 +173,7 @@ export default function HeroSection() {
                     href="https://www.facebook.com/guruprasath.guruprasath.90/"
                     target="_blank"
                     rel="noreferrer"
+                    title="Facebook"
                   >
                     FB
                   </a>
@@ -183,6 +183,7 @@ export default function HeroSection() {
                     href="https://twitter.com/love_guru__"
                     target="_blank"
                     rel="noreferrer"
+                    title="Twitter"
                   >
                     TW
                   </a>
@@ -192,6 +193,7 @@ export default function HeroSection() {
                     href="https://www.instagram.com/its_love_guru__/"
                     target="_blank"
                     rel="noreferrer"
+                    title="Instagram"
                   >
                     IG
                   </a>
@@ -201,6 +203,7 @@ export default function HeroSection() {
                     href="https://www.linkedin.com/in/guruprasath-i-29b4451b5/"
                     target="_blank"
                     rel="noreferrer"
+                    title="LinkedIn"
                   >
                     LI
                   </a>
