@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { useForm } from '@formspree/react';
 
 const FormStyle = styled.form`
   width: 100%;
@@ -37,15 +38,22 @@ const FormStyle = styled.form`
     border-radius: 8px;
     cursor: pointer;
   }
+  .thanks {
+    font-size: 100px;
+  }
 `;
 
 export default function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [state, handleSubmit] = useForm('myyllddr');
+  if (state.succeeded) {
+    return <p style={{ fontSize: '25px' }}>Thanks for Filling :-)</p>;
+  }
   return (
     <>
-      <FormStyle>
+      <FormStyle onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">
             Your Name
@@ -55,6 +63,7 @@ export default function ContactForm() {
               name="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              errors={state.errors}
             />
           </label>
         </div>
@@ -67,6 +76,7 @@ export default function ContactForm() {
               name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              errors={state.errors}
             />
           </label>
         </div>
@@ -79,10 +89,13 @@ export default function ContactForm() {
               name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              errors={state.errors}
             />
           </label>
         </div>
-        <button type="submit">Send</button>
+        <button type="submit" disabled={state.submitting}>
+          Send
+        </button>
       </FormStyle>
     </>
   );
